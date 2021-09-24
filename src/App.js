@@ -1,6 +1,7 @@
 import './App.css';
 import Nav from './components/Nav';
 import PasswordGenerator from './components/PasswordGenerator';
+import RandomPassword from './components/RandomPassword';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <header className="App-header">
         <Nav />
         <PasswordGenerator />
+        <RandomPassword />
       </header>
     </div>
   );
