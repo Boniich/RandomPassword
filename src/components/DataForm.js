@@ -8,9 +8,17 @@ const initialForm ={
 }
 
 
-const DataForm = ({createData}) =>{
+const DataForm = ({createData,updateData,dataToEdit,setDataToEdit}) =>{
 
     const [form,setForm] = useState(initialForm);
+
+    useEffect(() =>{
+        if(dataToEdit){
+            setForm(dataToEdit);
+        }else{  
+            setForm(initialForm);
+        }
+    },[dataToEdit]);
 
 
 
@@ -37,6 +45,8 @@ const DataForm = ({createData}) =>{
 
     if(form.id === null){
         createData(form);
+    }else{
+        updateData(form);
     }
 
     handleReset();
@@ -44,6 +54,7 @@ const DataForm = ({createData}) =>{
 
     const handleReset = (e) =>{
         setForm(initialForm);
+        setDataToEdit(null);
     }
 
 
