@@ -5,9 +5,9 @@ import DataTableRow from "./DataTableRow";
 const DataTable = ({data, setDataToEdit, deleteData}) =>{
 
     return(
-        <div>
-            <h1>Mis Sitios</h1>
-            <table>
+        <div className="padding ">
+            <h1 className="titles">Mis Sitios</h1>
+            <table className="table">
                 <thead>
                     <tr>
                         <th>Sitio</th>

@@ -8,7 +8,7 @@ const DataTableRow = ({el, setDataToEdit, deleteData}) =>{
             <td>{site}</td>
             <td>{username}</td>
             <td>{password}</td>
-            <td>
+            <td className="table-btns">
                 <button onClick={()=> setDataToEdit(el)}>Editar</button>
                 <button onClick={()=> deleteData(id)}>Eliminar</button>
             </td>

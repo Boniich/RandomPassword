@@ -59,14 +59,17 @@ const DataForm = ({createData,updateData,dataToEdit,setDataToEdit}) =>{
 
 
     return(
-        <div>
-            <h1>Agregar</h1>
-            <form onSubmit={handleSumit}>
-                <input type="text" name="site" placeholder="Site" onChange={handleChange} value={form.site}/>
-                <input type="text" name="username" placeholder="username" onChange={handleChange} value={form.username}/>
-                <input type="text" name="password" placeholder="password" onChange={handleChange} value={form.password}/>
-                <input type="submit" value="Guardar"/>
-                <input type="reset" value="Resetear" onClick={handleReset}/>
+        <div className="padding conteiner-form">
+            <h1 className="titles">{dataToEdit ? "Editar": "Agregar"}</h1>
+            <form className="form" onSubmit={handleSumit}>
+                <input className="inputs" type="text" name="site" placeholder="Site" onChange={handleChange} value={form.site}/>
+                <input className="inputs" type="text" name="username" placeholder="username" onChange={handleChange} value={form.username}/>
+                <input className="inputs" type="text" name="password" placeholder="password" onChange={handleChange} value={form.password}/>
+                <section className="section-form-btns">
+                <input className="form-btn" type="submit" value="Guardar"/>
+                <input className="form-btn" type="reset" value="Resetear" onClick={handleReset}/>
+                </section>
+                
             </form>
         </div>
     )

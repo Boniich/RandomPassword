@@ -8,8 +8,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Nav />
+        <div className="conteiner">
         <PasswordGenerator />
         <RandomPassword />
+        </div>
       </header>
     </div>
   );

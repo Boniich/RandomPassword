@@ -6,7 +6,7 @@ export default class PasswordGenerator extends Component{
     constructor(props){
         super(props);
        this.state = {
-            password: [],
+            password: [0],
         };
 
         this.generar = this.generar.bind(this);
@@ -69,11 +69,16 @@ export default class PasswordGenerator extends Component{
     render(){
         return(
             <>
-            <div>
-                <h1>Generar Contraseña</h1>
-                <div>
-                    <p>{this.state.password}</p>
-                    <button onClick={this.generar}>Generar</button>
+            <div className="padding conteiner-generator">
+                <h1 className="titles">Generar Contraseña</h1>
+                <div className="box-generator">
+                    <div>
+                         <p className="password-result">{this.state.password}</p>
+                    </div>
+                    <div>
+                         <button className="btn-generar" onClick={this.generar}>Generar</button>
+                    </div>
+                    
                 </div>
             </div>
             </>
