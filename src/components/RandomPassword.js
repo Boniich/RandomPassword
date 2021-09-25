@@ -91,8 +91,6 @@ const RandomPassword = () =>{
         updateData={updateData}
         dataToEdit={dataToEdit}
         setDataToEdit={setDataToEdit}/>
-        {/* por que es necesario el{db &&}
-        */}
         {loading && <Loader />}
         {error && (<Message msg={`Error ${error.status}: ${error.statusText}`} bgColor="#dc3545"/>)}
        {db && <DataTable data={db}

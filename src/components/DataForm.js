@@ -31,10 +31,6 @@ const DataForm = ({createData,updateData,dataToEdit,setDataToEdit}) =>{
     }   
 
 
-    
-    //Este evento va hacer que cuando se haga click en el boton enviar
-    // Se cree un numero objeto (o modifique un viejo objeto) en la base de datos
-
     const handleSumit = (e) =>{
     e.preventDefault();
 
