@@ -23,7 +23,7 @@ cd my-app
 ```     
 4- Run this script in one terminal:
 ```
-`npm run server`
+npm run server
 ```
 5- Run this script in another terminal (without close the another), wait that project will be runned.  
 ```
